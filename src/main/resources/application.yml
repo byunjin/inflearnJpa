@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop #MVCC=TRUE 여러개 접근했을때 빨라짐
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql:  true # System.out 으로 출력
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.sql: debug       # log로 출력
+    org.hibernate.type: trace       # log로 남음  2022-10-24 16:03:21.609 TRACE 18576 --- [    Test worker] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [BIGINT] - [1]
