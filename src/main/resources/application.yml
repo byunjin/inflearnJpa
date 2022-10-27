@@ -10,7 +10,7 @@ spring:
       ddl-auto: create
     properties:
       hibernate:
-        show_sql:  true # System.out 으로 출력
+#        show_sql:  true # System.out 으로 출력
         format_sql: true
 
 logging:
