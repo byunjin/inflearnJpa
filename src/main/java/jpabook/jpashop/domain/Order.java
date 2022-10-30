@@ -49,4 +49,7 @@ public class Order {
         delivery.setOrder(this);
     }
 
+    //==생성 메서드==//
+    public static Order createOrder(Member member, Delivery delivery, OrderItem.. OrderItem)
+
 }
