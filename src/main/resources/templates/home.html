@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<head th:replace="fragments/header :: header">
+  <title>Hello</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">-->
+</head>
+
+<body>
+
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>-->
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+
+    <div class="jumbotron" style="background-color: white">
+      <h1>HELLO SHOP</h1>
+      <p class="lead">회원 기능</p>
+      <p>
+        <a class="btn btn-lg btn-secondary" href="/members/new" >회원 가입</a>
+        <a class="btn btn-lg btn-secondary" href="/members">회원 목록</a>
+      </p>
+      <p class="lead">상품 기능</p>
+      <p>
+        <a class="btn btn-lg btn-secondary" href="/items/new" style="background-color: #1b1e21">상품 등록</a>
+        <a class="btn btn-lg btn-secondary" href="/items" style="background-color: #1b1e21">상품 목록</a>
+      </p>
+      <p class="lead">주문 기능</p>
+      <p>
+        <a class="btn btn-lg btn-secondary" href="/orders/new" style="background-color: #0f6674">상품 주문</a>
+        <a class="btn btn-lg btn-secondary" href="/orders" style="background-color: #0f6674">주문 내역</a>
+      </p>
+    </div>
+
+    <div th:replace="fragments/footer :: footer"/>
+
+</div>
+</body>
+
+</html>
